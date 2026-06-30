@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tatto main</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styles/tatto.css" />
+    <link rel="stylesheet" href="./styles/cmn.css" />
+  </head>
+  <body>
+    <!-- #region header  -->
+    <header class="header">
+      <div class="both">
+        <div class="both">
+          <div class="not-main">
+            <a href="../../index.html">leek chenz</a>
+          </div>
+
+          <div class="tattu">
+            <button class="burger" id="burger" aria-label="Open menu">
+              <span class="bline"></span>
+              <span class="bline"></span>
+              <span class="bline"></span>
+            </button>
+
+            <nav class="nav2" id="mobileMenu">
+              <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#sec1">artists</a></li>
+                <li><a href="#sec2">gallery</a></li>
+                <li><a href="#sec3">piercing</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="./templates/book.html">book online</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="top">
+        <nav class="nav1">
+          <ul>
+            <li><a href="">book now</a></li>
+          </ul>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="log">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>log in</p>
+          </div>
+        </nav>
+      </div>
+      <div class="bottom">
+        <nav class="nav3">
+          <ul>
+            <li>
+              <a href="#main">home</a>
+            </li>
+            <li>
+              <a href="#sec1">artists</a>
+            </li>
+            <li>
+              <a href="#sec2">gallery</a>
+            </li>
+            <li>
+              <a href="#sec3">piercing</a>
+            </li>
+            <li>
+              <a href="#cont">contact</a>
+            </li>
+            <li>
+              <a href="./templates/book.html">book online</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region main  -->
+    <main id="main">
+      <div class="zeda">
+        <div class="container">
+          <div class="text">
+            <p>the look studio</p>
+          </div>
+          <div class="line"></div>
+          <div class="logo">
+            <img src="./pictures/pepela.svg" />
+            <img src="./pictures/qala.svg" />
+            <img src="./pictures/oqtopus.svg" />
+          </div>
+        </div>
+        <div class="arrdown">
+          <a href="#qveda"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+      </div>
+      <div class="qveda" id="qveda">
+        <div class="left">
+          <div class="cont">
+            <p>WELCOME TO THE LOOK STUDIO TATTOO & PIERCING</p>
+            <div class="div">
+              <div class="line"></div>
+              <p>NOW OPEN 7 DAYS A WEEK!</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="plain">
+            <div class="quote-box">
+              <p id="quote">Loading quote...</p>
+              <span id="author"></span>
+            </div>
+
+            <p>
+              I’m a great place for you to write more. Tell a story and let your
+              users get to know you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- #endregion main  -->
+
+    <!-- #region section  -->
+    <section class="sec1" id="sec1">
+      <div class="text">
+        <div class="art">
+          <p>artists</p>
+          <div class="logo">
+            <img src="./pictures/makr.svg" alt="" />
+          </div>
+        </div>
+        <div class="divs">
+          <div class="div"></div>
+          <div class="div1">
+            <p class="same">ARTIST 1.</p>
+            <p class="same">CLICK TO EDIT.</p>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me and you can start
+              adding your own content and make changes to the font. Feel free to
+              drag and drop me anywhere you like on your page. I’m a great place
+              for you to tell a story and let your users know a little more
+              about you.
+            </p>
+          </div>
+          <div class="div2">
+            <p class="same">ARTIST 2.</p>
+            <p class="same">CLICK TO EDIT.</p>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me and you can start
+              adding your own content and make changes to the font. Feel free to
+              drag and drop me anywhere you like on your page. I’m a great place
+              for you to tell a story and let your users know a little more
+              about you.
+            </p>
+          </div>
+          <div class="div"></div>
+          <div class="div"></div>
+          <div class="div3">
+            <p class="same">ARTIST 3.</p>
+            <p class="same">CLICK TO EDIT.</p>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me and you can start
+              adding your own content and make changes to the font. Feel free to
+              drag and drop me anywhere you like on your page. I’m a great place
+              for you to tell a story and let your users know a little more
+              about you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion section  -->
+
+    <!-- #region gallery  -->
+    <section class="sec2" id="sec2">
+      <div class="zeda">
+        <div class="satauri">
+          <div class="pic"></div>
+          <p>gallery</p>
+        </div>
+        <div class="pics">
+          <div class="shida">
+            <a href="#"
+              ><div class="pic1">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic2">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic3">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic4">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic5">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic6">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic7">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic8">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="pic9">
+                <div class="text">
+                  <div class="over">
+                    <p>i'm image</p>
+                    <p>
+                      Describe your image here. Use catchy text to tell people
+                      the story behind the photo. Go to “Manage Media” to add
+                      your content.
+                    </p>
+                  </div>
+                  <div class="bover">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                  </div>
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="qveda"></div>
+    </section>
+    <!-- #endregion gallery  -->
+
+    <!-- #region  piercing  -->
+    <section class="sec3" id="sec3">
+      <div class="text">
+        <p>piercing</p>
+        <div class="svg"><img src="./pictures/scissr.svg" alt="" /></div>
+        <p>I'M A TITLE.</p>
+        <p>CLICK HERE TO EDIT.</p>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me and you can start
+          adding your own content and make changes to the font. Feel free to
+          drag and drop me anywhere you like on your page
+        </p>
+        <div class="svg" id="cont">
+          <img src="./pictures/ring.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- #endregion  -->
+
+    <!-- #region contact  -->
+    <section class="contact" id="#contact">
+      <div class="container">
+        <div class="cont-text">
+          <div class="logo"><img src="./pictures/crown.svg" alt="" /></div>
+          <p>contact us</p>
+          <p>address</p>
+          <p>500 Terry Francine Street, San Francisco, CA 94158</p>
+          <p>Tel: 123-456-7890 Fax: 123-456-7890</p>
+          <p>info@mysite.com</p>
+          <p>OPENING HOURS</p>
+          <p>Monday - Friday: 7am - 10pm</p>
+          <p>​​Saturday: 8am - 10pm</p>
+          <p>​Sunday: 8am - 11pm</p>
+        </div>
+        <div class="inputs">
+          <form action="">
+            <div class="names">
+              <div class="lef">
+                <label for="fn">first name *</label>
+                <input type="text" required id="fn" />
+                <span class="val-err"></span>
+              </div>
+              <div class="rig">
+                <label for="ln">last name *</label>
+                <input type="text" required id="ln" />
+                <span class="val-err"></span>
+              </div>
+            </div>
+            <div class="other">
+              <div class="lef">
+                <label for="em">email *</label>
+                <input type="email" required id="em" />
+                <span class="val-err"></span>
+              </div>
+              <div class="rig">
+                <label for="phone">phone</label>
+                <input type="tel" required id="phone" />
+                <span class="val-err"></span>
+              </div>
+            </div>
+            <div class="msg">
+              <label for="msg">type your message here...</label>
+              <input type="text" id="msg" />
+              <span class="val-err"></span>
+            </div>
+            <div class="btn">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="map">
+          <div class="line"></div>
+          <div class="div" id="map"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion contact  -->
+    <div class="cookie-popup" id="cookiePopup">
+      <p>This website uses cookies to improve your experience.</p>
+
+      <button id="acceptCookies">Accept</button>
+    </div>
+    <button id="scrollTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      const map = L.map("map").setView([40.7128, -74.006], 13);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([40.7128, -74.006])
+        .addTo(map)
+        .bindPopup("We are here!")
+        .openPopup();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
+    <script src="./j-script/j-script.js"></script>
+    <script src="./j-script/common.js"></script>
+  </body>
+</html>

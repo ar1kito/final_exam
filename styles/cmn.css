@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "montserrat", arial, sans-serif;
+}
+body #scrollTopBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 90px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 999;
+}
+body #scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+body #scrollTopBtn:hover {
+  background: #333;
+}
+
+.header {
+  position: relative;
+  z-index: 9999;
+}
+.header a {
+  all: unset;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header p {
+  color: white;
+}
+.header .top {
+  position: fixed;
+  height: 50px;
+  background-color: black;
+  top: 30px;
+  left: 0;
+  max-width: 400px;
+  width: 100%;
+}
+.header .top .nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.header .top .icons {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 5px;
+}
+.header .top .icons i {
+  color: white;
+}
+.header .top .log {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.header .top .log i {
+  color: white;
+  font-size: 25px;
+}
+.header .bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .bottom a {
+  pointer-events: auto;
+}
+.header .bottom .nav3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header .bottom .nav3 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .bottom .nav3 li {
+  padding: 30px;
+}
+.header .both {
+  width: 100%;
+  min-height: 70px;
+  display: none;
+  background: black;
+  align-items: center;
+}
+.header .both .not-main {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.header .both .tattu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.header .both .burger {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1002;
+}
+.header .both .burger .bline {
+  width: 40px;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+}
+.header .both .burger.active {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.header .both .burger.active .bline:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.header .both .burger.active .bline:nth-child(2) {
+  opacity: 0;
+}
+.header .both .burger.active .bline:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.header .both .nav2 {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.header .both .nav2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.header .both .nav2.active {
+  opacity: 1;
+  visibility: visible;
+}
+.header .both .nav2 a {
+  pointer-events: auto;
+}
+@media screen and (max-width: 600px) {
+  .header .top,
+  .header .bottom {
+    display: none;
+  }
+  .header .both {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .top,
+  .header .bottom {
+    display: none;
+  }
+  .header .both {
+    display: flex;
+  }
+}/*# sourceMappingURL=cmn.css.map */

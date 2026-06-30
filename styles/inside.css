@@ -1,0 +1,394 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contain-garet {
+  width: 100%;
+  background-image: url("../../pictures/fire.avif");
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contain-garet .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+}
+main .contain-garet .container .text {
+  width: 160px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .contain-garet .container .text p {
+  color: white;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: end;
+  padding-right: 10px;
+}
+@media screen and (max-width: 600px) {
+  main .contain-garet .container .text p {
+    font-size: 35px;
+  }
+}
+main .contain-garet .container .line {
+  width: 5px;
+  height: 300px;
+  background-color: white;
+}
+main .contain-garet .container .logo {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+main .contain-garet .container .logo img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: swap 3s infinite;
+}
+main .contain-garet .container .logo img:nth-child(1) {
+  animation-delay: 0s;
+}
+main .contain-garet .container .logo img:nth-child(2) {
+  animation-delay: 1s;
+}
+main .contain-garet .container .logo img:nth-child(3) {
+  animation-delay: 2s;
+}
+@keyframes swap {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+section .head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0;
+}
+section .head h1:nth-child(1) {
+  font-size: clapm(20px, 3vw 45px);
+  font-weight: 700;
+}
+section .head p:nth-child(2) {
+  font-size: clamp(13px, 5vw, 16px);
+  padding: 10px;
+}
+section .mtavari-box {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+section .mtavari-box .marcxena {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section .mtavari-box .marcxena .danarcheni {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .mtavari-box .marcxena .dro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section .mtavari-box .marcxena .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+section .mtavari-box .marcxena .teqsti {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+section .mtavari-box .marcxena .teqsti h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+section .mtavari-box .marcxena .teqsti .time-shecvla {
+  position: relative;
+  display: inline-block;
+}
+section .mtavari-box .marcxena .teqsti .time-shecvla:focus-within .menu {
+  opacity: 1;
+  visibility: visible;
+}
+section .mtavari-box .marcxena .teqsti .time-shecvla:focus-within .arrow {
+  transform: rotate(180deg);
+}
+section .mtavari-box .marcxena .teqsti .btn-time {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  min-width: 260px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+section .mtavari-box .marcxena .teqsti .btn-time .arrow {
+  font-size: 16px;
+  padding-left: 15px;
+}
+section .mtavari-box .marcxena .teqsti .menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #bbb;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease;
+}
+section .mtavari-box .marcxena .teqsti .menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+section .mtavari-box .marcxena .teqsti .menu li:hover {
+  background: #dcdcdc;
+}
+section .mtavari-box .marcxena .kalendari {
+  width: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+}
+section .mtavari-box .marcxena .adgilebi {
+  width: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+}
+section .mtavari-box .marcxena .adgilebi p {
+  padding: 20px;
+  font-weight: 600;
+}
+section .mtavari-box .marcxena .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+section .mtavari-box .marcxena .buttons .active {
+  background-color: #000;
+  color: white;
+}
+section .mtavari-box .marcxena .buttons button {
+  padding: 5px 15px;
+  background-color: #ffffff;
+}
+section .mtavari-box .marjvena {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  flex-grow: 1;
+}
+section .mtavari-box .marjvena h2:nth-child(1) {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1030px) {
+  section .mtavari-box .marjvena {
+    width: 100%;
+    max-width: 80%;
+  }
+  section .mtavari-box .marjvena h2 {
+    padding-top: 30px;
+  }
+}
+section .mtavari-box .marjvena .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+section .mtavari-box .marjvena .servisi {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 30px;
+  text-transform: capitalize;
+}
+section .mtavari-box .marjvena .servisi p {
+  font-weight: 400;
+}
+section .mtavari-box .marjvena .servisi button {
+  background-color: #000;
+  color: #ffffff;
+  padding: 5px 0;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  section .mtavari-box .kalendari,
+  section .mtavari-box .adgilebi {
+    width: 100%;
+    min-width: 100%;
+  }
+  section .mtavari-box .teqsti {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  section .mtavari-box .btn-time {
+    min-width: 100%;
+    justify-content: space-between;
+  }
+  section .mtavari-box .menu {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  section .mtavari-box h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  section .mtavari-box .head {
+    padding: 20px 10px;
+  }
+  section .mtavari-box .buttons {
+    justify-content: center;
+  }
+  section .mtavari-box .buttons button {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 992px) {
+  section .mtavari-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .marcxena,
+  section .marjvena {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-wdith: 600px) {
+  section {
+    padding-bottom: 0;
+  }
+}
+section .calendar {
+  max-width: 420px;
+  margin: 0 auto;
+}
+section .calendar .arrow {
+  font-size: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+section .calendar h5 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+section .calendar .fw-semibold {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+section .calendar .row.text-center.g-3 .col {
+  min-height: 42px;
+  font-size: 14px;
+  position: relative;
+  cursor: default;
+}
+section .calendar .row.text-center.g-3 .col.text-muted {
+  color: #b3b3b3 !important;
+}
+section .calendar .selected {
+  background-color: #000000;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+section .calendar .dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 4px auto 0;
+}
+
+@media screen and (max-width: 350px) {
+  main .contain-garet .container {
+    max-width: 100%;
+    padding: 40px 10px;
+  }
+  main .contain-garet .container .text p {
+    font-size: 36px;
+  }
+  main .contain-garet .container .logo {
+    width: 120px;
+    height: 120px;
+  }
+  section .head h1 {
+    font-size: 22px;
+  }
+  section .mtavari-box .marcxena .dro .teqsti h2 {
+    font-size: 16px;
+  }
+  section .mtavari-box .marcxena .danarcheni .kalendari {
+    padding: 10px 0;
+  }
+  section .mtavari-box .marcxena .danarcheni .adgilebi .buttons {
+    gap: 6px;
+  }
+  section .mtavari-box .marjvena h2 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=inside.css.map */

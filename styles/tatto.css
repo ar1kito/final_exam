@@ -1,0 +1,728 @@
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+main .zeda {
+  width: 100%;
+  min-height: 90vh;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../pictures/fire.avif");
+  display: flex;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .zeda .arrdown {
+  padding-bottom: 80px;
+}
+main .zeda .arrdown i {
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  padding-right: 10px;
+}
+main .zeda .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+}
+main .zeda .container .text {
+  width: 160px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .zeda .container .text p {
+  color: white;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: end;
+  padding-right: 10px;
+}
+main .zeda .container .line {
+  width: 5px;
+  height: 300px;
+  background-color: white;
+}
+main .zeda .container .logo {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+main .zeda .container .logo img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: swap 3s infinite;
+}
+main .zeda .container .logo img:nth-child(1) {
+  animation-delay: 0s;
+}
+main .zeda .container .logo img:nth-child(2) {
+  animation-delay: 1s;
+}
+main .zeda .container .logo img:nth-child(3) {
+  animation-delay: 2s;
+}
+@keyframes swap {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+main .qveda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  main .qveda {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  main .qveda .left,
+  main .qveda .right {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  main .qveda .left .cont {
+    max-width: 100%;
+  }
+  main .qveda .right .plain {
+    max-width: 100%;
+  }
+}
+main .qveda .left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 20px;
+  width: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+main .qveda .left .cont {
+  max-width: 450px;
+  width: 100%;
+}
+main .qveda .left .cont > p {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: end;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  main .qveda .left .cont > p {
+    font-size: 25px;
+  }
+}
+main .qveda .left .cont .div {
+  display: flex;
+  justify-content: space-around;
+}
+main .qveda .left .cont .div .line {
+  height: 50px;
+  width: 3px;
+  background-color: black;
+}
+main .qveda .left .cont .div p {
+  padding-top: 10px;
+}
+main .qveda .right {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+main .qveda .right .plain {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .qveda .right .plain p {
+  font-size: 19px;
+}
+
+.sec1 {
+  width: 100%;
+  background-image: url("../../pictures/beard.avif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sec1 .text {
+  width: 100%;
+}
+.sec1 .text .art {
+  width: 100%;
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.sec1 .text .art p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 70px;
+  padding-top: 30px;
+}
+.sec1 .text .divs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .sec1 .text .divs {
+    flex-direction: column;
+  }
+  .sec1 .text .divs .div1,
+  .sec1 .text .divs .div2,
+  .sec1 .text .divs .div3 {
+    width: 100%;
+    padding: 20px;
+  }
+  .sec1 .text .divs .div {
+    display: none;
+  }
+}
+.sec1 .text .divs .same {
+  font-size: 40px;
+}
+.sec1 .text .divs .div1 p,
+.sec1 .text .divs .div2 p,
+.sec1 .text .divs .div3 p {
+  max-width: 500px;
+  width: 100%;
+  line-height: 1.6;
+}
+.sec1 .text .divs .div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+.sec1 .text .divs > div {
+  width: 50%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sec1 .text .divs > div p {
+  color: white;
+}
+
+.sec2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sec2 .qveda {
+  width: 100%;
+  min-height: 400px;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../pictures/fire.avif");
+  background-attachment: fixed;
+}
+.sec2 .zeda {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.sec2 .zeda .satauri {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec2 .zeda .satauri .pic {
+  width: 200px;
+  height: 170px;
+  background-image: url("../../pictures/glasse.avif");
+  background-position: center;
+  background-size: cover;
+}
+.sec2 .zeda .satauri p {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.sec2 .zeda .pics {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+.sec2 .zeda .pics .shida {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+}
+@media (max-width: 900px) {
+  .sec2 .zeda .pics .shida {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .sec2 .zeda .pics .shida {
+    grid-template-columns: 1fr;
+  }
+}
+.sec2 .zeda .pics .shida a {
+  display: block;
+  height: 100%;
+}
+.sec2 .zeda .pics .shida a div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.3s;
+}
+.sec2 .zeda .pics .shida a div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+.sec2 .zeda .pics .shida a div .text {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 .zeda .pics .shida a div .text .over {
+  width: 100%;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+.sec2 .zeda .pics .shida a div .text .over p:nth-child(1) {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sec2 .zeda .pics .shida a div .text .over p:nth-child(2) {
+  max-width: 400px;
+  width: 100%;
+}
+.sec2 .zeda .pics .shida a div .text .bover {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px 40px;
+}
+.sec2 .zeda .pics .shida a div:hover div::before {
+  background-color: rgba(193, 192, 192, 0.5);
+}
+.sec2 .zeda .pics .shida a div:hover .text {
+  opacity: 1;
+}
+.sec2 .zeda .pics .shida .pic1 {
+  background-image: url("../../pictures/man.avif");
+}
+.sec2 .zeda .pics .shida .pic2 {
+  background-image: url("../../pictures/woman.avif");
+}
+.sec2 .zeda .pics .shida .pic3 {
+  background-image: url("../../pictures/back.avif");
+}
+.sec2 .zeda .pics .shida .pic4 {
+  background-image: url("../../pictures/arm.avif");
+}
+.sec2 .zeda .pics .shida .pic5 {
+  background-image: url("../../pictures/gauy.avif");
+}
+.sec2 .zeda .pics .shida .pic6 {
+  background-image: url("../../pictures/back2.avif");
+}
+.sec2 .zeda .pics .shida .pic7 {
+  background-image: url("../../pictures/couple.avif");
+}
+.sec2 .zeda .pics .shida .pic8 {
+  background-image: url("../../pictures/smh.avif");
+}
+.sec2 .zeda .pics .shida .pic9 {
+  background-image: url("../../pictures/arm2.avif");
+}
+
+.sec3 {
+  width: 100%;
+  min-height: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../pictures/manbr.avif");
+  background-position: center;
+  background-size: cover;
+}
+.sec3 .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.sec3 .text p:first-child {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+  .sec3 .text p:first-child {
+    font-size: 30px;
+  }
+}
+.sec3 .text p:nth-child(3),
+.sec3 .text p:nth-child(4) {
+  font-weight: 600;
+  font-size: 25px;
+}
+.sec3 .text p:nth-child(5) {
+  max-width: 400px;
+  width: 100%;
+  align-self: center;
+}
+.sec3 .text p {
+  color: white;
+}
+
+.contact {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.contact .container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+.contact .container .cont-text {
+  align-content: center;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.contact .container .cont-text p {
+  font-size: 17px;
+}
+.contact .container .cont-text p:nth-child(2) {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+}
+@media screen and (max-width: 650px) {
+  .contact .container .cont-text p:nth-child(2) {
+    font-size: 30px;
+  }
+}
+.contact .container .cont-text p:nth-child(3) {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 0px 20px 0px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+  .contact .container .cont-text p:nth-child(3) {
+    font-size: 20px;
+  }
+}
+.contact .container .cont-text p:nth-child(7) {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px 0px 20px 0px;
+}
+@media screen and (max-width: 650px) {
+  .contact .container .cont-text p:nth-child(7) {
+    font-size: 20px;
+  }
+}
+.contact .inputs {
+  width: 60%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.contact .inputs .iti__selected-flag::before {
+  content: "\f7a2";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 6px;
+}
+.contact .inputs input {
+  width: 100%;
+  border: 3px black solid;
+  padding: 10px 80px;
+}
+.contact .inputs input:hover {
+  background-color: rgba(128, 128, 128, 0.577);
+}
+.contact .inputs label {
+  text-transform: capitalize;
+  padding: 10px 0px 10px 0px;
+}
+.contact .inputs .names {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.contact .inputs .names .lef {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .inputs .names .rig {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .inputs .other {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.contact .inputs .other .lef {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .inputs .other .rig {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .inputs .msg {
+  padding: 20px 0px 20px 0px;
+}
+.contact .inputs .msg input {
+  padding: 25px 70px;
+}
+.contact .inputs .btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.contact .inputs .btn button {
+  padding: 7px 70px;
+  background-color: rgb(104, 104, 104);
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  line-height: 1.9;
+}
+.contact .inputs .btn button:hover {
+  background-color: rgba(102, 102, 102, 0.511);
+}
+.contact .map {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .map .line {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+.contact .map .div {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+}
+@media screen and (max-width: 970px) {
+  .contact {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .container {
+    width: 90%;
+  }
+  .contact .map {
+    width: 100%;
+  }
+  .contact .inputs {
+    width: 90%;
+  }
+  .contact .inputs .names,
+  .contact .inputs .other {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact .inputs .btn {
+    justify-content: center;
+  }
+  .contact .inputs .btn button {
+    width: 100%;
+  }
+  .contact .inputs .names .lef,
+  .contact .inputs .names .rig,
+  .contact .inputs .other .lef,
+  .contact .inputs .other .rig {
+    width: 100%;
+  }
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 600px;
+  max-width: 350px;
+  background: #000;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 99999;
+  border-radius: 10px;
+}
+.cookie-popup button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.cookie-popup.hide {
+  display: none;
+}
+
+@media screen and (max-width: 350px) {
+  main .zeda .container {
+    max-width: 100%;
+    padding: 40px 10px;
+  }
+  main .zeda .container .text {
+    width: 120px;
+  }
+  main .zeda .container .text p {
+    font-size: 36px;
+  }
+  main .zeda .container .logo {
+    width: 120px;
+    height: 120px;
+  }
+  main .qveda .left {
+    min-width: 0;
+  }
+  main .qveda .right {
+    min-width: 0;
+  }
+  .sec1 .text .art p {
+    font-size: 42px;
+  }
+  .sec1 .text .divs .same {
+    font-size: 26px;
+  }
+  .sec2 .zeda .satauri p {
+    font-size: 42px;
+  }
+  .sec2 .zeda .pics .shida {
+    width: 100%;
+  }
+  .sec3 .text {
+    width: 90%;
+  }
+  .sec3 .text p:first-child {
+    font-size: 24px;
+  }
+  .sec3 .text p:nth-child(3),
+  .sec3 .text p:nth-child(4) {
+    font-size: 18px;
+  }
+  .contact .container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .contact .cont-text p:nth-child(2) {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .contact .inputs {
+    width: 100%;
+  }
+  .contact .inputs input {
+    padding: 10px 8px;
+  }
+  .contact .inputs .msg input {
+    padding: 15px 8px;
+  }
+  .contact .inputs .btn button {
+    padding: 7px 20px;
+  }
+  .contact .map {
+    width: 100%;
+  }
+}/*# sourceMappingURL=tatto.css.map */

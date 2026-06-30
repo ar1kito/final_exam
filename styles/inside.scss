@@ -1,0 +1,395 @@
+//main
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contain-garet {
+    width: 100%;
+    background-image: url("../../pictures/fire.avif");
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      max-width: 340px;
+      width: 100%;
+      display: flex;
+      .text {
+        width: 160px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        p {
+          color: white;
+          font-size: 55px;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: end;
+          padding-right: 10px;
+          @media screen and (max-width: 600px) {
+            & {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+      .line {
+        width: 5px;
+        height: 300px;
+        background-color: white;
+      }
+      .logo {
+        position: relative;
+        width: 160px;
+        height: 160px;
+      }
+
+      .logo img {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        animation: swap 3s infinite;
+      }
+
+      .logo img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .logo img:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .logo img:nth-child(3) {
+        animation-delay: 2s;
+      }
+
+      @keyframes swap {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+// sec
+section {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  .head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0;
+    h1:nth-child(1) {
+      font-size: clapm(20px, 3vw 45px);
+      font-weight: 700;
+    }
+    p:nth-child(2) {
+      font-size: clamp(13px, 5vw, 16px);
+      padding: 10px;
+    }
+  }
+  .mtavari-box {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .marcxena {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .danarcheni {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .dro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+      }
+      .teqsti {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        h2 {
+          text-align: center;
+          font-size: 25px;
+          font-weight: 700;
+        }
+        .time-shecvla {
+          position: relative;
+          display: inline-block;
+          &:focus-within .menu {
+            opacity: 1;
+            visibility: visible;
+          }
+          &:focus-within .arrow {
+            transform: rotate(180deg);
+          }
+        }
+        .btn-time {
+          background: transparent;
+          border: none;
+          padding: 8px 12px;
+          cursor: pointer;
+          min-width: 260px;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          .arrow {
+            font-size: 16px;
+            padding-left: 15px;
+          }
+        }
+        .menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: #ffffff;
+          border: 1px solid #bbb;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.15s ease;
+          li {
+            padding: 8px 12px;
+            cursor: pointer;
+            &:hover {
+              background: #dcdcdc;
+            }
+          }
+        }
+      }
+      .kalendari {
+        width: 50%;
+        min-width: 300px;
+        flex-grow: 1;
+      }
+      .adgilebi {
+        width: 50%;
+        min-width: 300px;
+        flex-grow: 1;
+        p {
+          padding: 20px;
+          font-weight: 600;
+        }
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+        .active {
+          background-color: #000;
+          color: white;
+        }
+        button {
+          padding: 5px 15px;
+          background-color: #ffffff;
+        }
+      }
+    }
+    .marjvena {
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      flex-grow: 1;
+      h2:nth-child(1) {
+        text-align: center;
+        text-transform: capitalize;
+      }
+      @media screen and (max-width: 1030px) {
+        width: 100%;
+        max-width: 80%;
+        h2 {
+          padding-top: 30px;
+        }
+      }
+      .line {
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+      }
+      .servisi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 30px;
+        text-transform: capitalize;
+
+        p {
+          font-weight: 400;
+        }
+        button {
+          background-color: #000;
+          color: #ffffff;
+          padding: 5px 0;
+          text-transform: capitalize;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .kalendari,
+      .adgilebi {
+        width: 100%;
+        min-width: 100%;
+      }
+
+      .teqsti {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn-time {
+        min-width: 100%;
+        justify-content: space-between;
+      }
+
+      .menu {
+        width: 100%;
+      }
+    }
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .head {
+        padding: 20px 10px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .buttons button {
+        flex: 1 1 45%;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .mtavari-box {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .marcxena,
+    .marjvena {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-wdith: 600px) {
+    padding-bottom: 0;
+  }
+  .calendar {
+    max-width: 420px;
+    margin: 0 auto;
+    .arrow {
+      font-size: 22px;
+      cursor: pointer;
+      user-select: none;
+    }
+    h5 {
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .fw-semibold {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    .row.text-center.g-3 {
+      .col {
+        min-height: 42px;
+        font-size: 14px;
+        position: relative;
+        cursor: default;
+        &.text-muted {
+          color: #b3b3b3 !important;
+        }
+      }
+    }
+    .selected {
+      background-color: #000000;
+      color: #ffffff;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .dot {
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 50%;
+      margin: 4px auto 0;
+    }
+  }
+}
+
+// 320px fix
+@media screen and (max-width: 350px) {
+  main .contain-garet .container {
+    max-width: 100%;
+    padding: 40px 10px;
+    .text p { font-size: 36px; }
+    .logo { width: 120px; height: 120px; }
+  }
+
+  section .head h1 { font-size: 22px; }
+
+  section .mtavari-box {
+    .marcxena {
+      .dro .teqsti h2 { font-size: 16px; }
+      .danarcheni {
+        .kalendari { padding: 10px 0; }
+        .adgilebi .buttons { gap: 6px; }
+      }
+    }
+    .marjvena h2 { font-size: 20px; }
+  }
+}

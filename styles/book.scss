@@ -1,0 +1,211 @@
+//main
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contain-garet {
+    width: 100%;
+    background-image: url("../../pictures/fire.avif");
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      max-width: 340px;
+      width: 100%;
+      display: flex;
+      .text {
+        width: 160px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        p {
+          color: white;
+          font-size: 55px;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: end;
+          padding-right: 10px;
+          @media screen and (max-width: 600px) {
+            & {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+      .line {
+        width: 5px;
+        height: 300px;
+        background-color: white;
+      }
+      .logo {
+        position: relative;
+        width: 160px;
+        height: 160px;
+      }
+
+      .logo img {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        animation: swap 3s infinite;
+      }
+
+      .logo img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .logo img:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .logo img:nth-child(3) {
+        animation-delay: 2s;
+      }
+
+      @keyframes swap {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+//section
+section {
+  width: 100%;
+  background-color: white;
+  .head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    p {
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @media screen and (max-width: 600px) {
+        & {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .divs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px 100px 10px;
+    .lef {
+      background-image: url("../../pictures/mannnn.avif");
+    }
+    .lev {
+      background-image: url("../../pictures/womn-tatto.avif");
+    }
+    .let {
+      background-image: url("../../pictures/frustation.avif");
+    }
+    .div {
+      max-width: 900px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid black;
+      position: relative;
+      .link {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+      }
+      .btns,
+      .text a {
+        position: relative;
+        z-index: 2;
+      }
+      .right {
+        padding: 20px 40px;
+      }
+      .text {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 21px;
+        padding: 40px 20px;
+        a {
+          all: unset;
+          cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+          & {
+            padding: 0;
+          }
+        }
+        p {
+          padding: 10px 0;
+        }
+      }
+      .btns {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+    .div > div {
+      background-position: center;
+      background-size: cover;
+      min-height: 300px;
+    }
+    @media (max-width: 700px) {
+      .div {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+// 320px fix
+@media screen and (max-width: 350px) {
+  main .contain-garet .container {
+    max-width: 100%;
+    padding: 40px 10px;
+    .text p { font-size: 36px; }
+    .logo { width: 120px; height: 120px; }
+  }
+
+  section .head {
+    padding: 20px 10px;
+    p { font-size: 32px; }
+  }
+
+  section .divs .div {
+    flex-direction: column;
+    .lef, .let, .lev { width: 100%; height: 200px; }
+    .right { width: 100%; padding: 10px; }
+    .right .text {
+      a { font-size: 18px; }
+      padding: 10px 20px;
+    }
+  }
+}
