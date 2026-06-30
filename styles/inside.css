@@ -91,7 +91,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
 }
 section .head {
   width: 100%;
